@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+@font-face{
+  font-family: "mullerBold";
+  src: url("fonts/MullerNarrow-ExtraBold.otf");
+}
+
+@font-face{
+  font-family: "mullerBoldItalic";
+  src: url("fonts/MullerNarrow-ExtraBoldItalic.otf");
+}
+
+@font-face{
+  font-family: "mullerLight";
+  src: url("fonts/MullerNarrow-Light.otf");
+}
+
+@font-face{
+  font-family: "mullerLightItalic";
+  src: url("fonts/MullerNarrow-LightItalic.otf");
+}
+
+$fontBold: 'mullerBold', Helvetica, Arial, sans-serif;
+$fontBoldItalic: 'mullerBoldItalic', Helvetica, Arial, sans-serif;
+$fontLight: 'mullerLight', Helvetica, Arial, sans-serif;
+$fontLightItalic: 'mullerLightItalic', Helvetica, Arial, sans-serif;
+
+$greyColor:  #dbe3e9;
+$greyDarkFont: #7a7b7d;
+$greyColorFont: #a0a0a0;
+$greyBorder: #cdd1d4;
+$fontColor: #313131;
+$blueColor: #0ea5d0;
+$blueColorForm: #5393ea;
+$greenColor: #27c799;
+$blueGradient: #4990e2;
+$purpleGradient: #6d7be6;
+$purpleDark : #5d417c;
+$greyFontForm: #9395a2;
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "reset",
+  "header"
+;

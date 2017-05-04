@@ -1,0 +1,38 @@
+{
+  "name": "Everton Boni Frontend",
+  "version": "1.0.0",
+  "description": "Site portfolio by Frontend Dev Everton Boni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "portfolio, freelancer, frontend, front end,"
+  ],
+  "author": "Everton Boni",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "flexboxgrid": "^6.3.1",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^3.1.0",
+    "jshint": "^2.9.2"
+  }
+}
