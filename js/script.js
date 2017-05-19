@@ -1,22 +1,24 @@
 //MENU NAV
-$(function() {
-    $('.menu-mobile').click(function(e) {
-        e.stopPropagation();
-        toggleNav();
-    });
+$(function(){
 
-    $('body, .navMobile > ul').click(function(e){
-        var target = $(e.target);
-        if($('#nav').hasClass('navMobile')) toggleNav();
-    });
+	$('.menu-mobile').click(function(e) {
+		e.stopPropagation();
+		toggleNav();
+	});
 
-    function toggleNav(){
-        if($('#nav').hasClass('navMobile')){
-            $('#nav').removeClass('navMobile');
-        }else{
-            $('#nav').addClass('navMobile');
-        }
-    }
+	$('#main, .navMobile > ul').click(function(e){
+		var target = $(e.target);
+		if($('#nav ul').hasClass('navMobile')) toggleNav();
+	});
+
+	function toggleNav(){
+		if($('#nav ul').hasClass('navMobile')){
+			$('#nav ul').removeClass('navMobile');
+		}else{
+			$('#nav ul').addClass('navMobile');
+		}
+	}
+
 });
 
 //Menu scroll
