@@ -2,10 +2,21 @@ a{text-decoration:none; color:inherit;}
 a:hover{text-decoration:none; color:inherit;}
 a:active{text-decoration:none; color:inherit;}
 
+body {
+  font-size: 62.5%;
+  font-family: $font-open;
+}
+
 h1{
-  font-family: $fontBold;
+  font-family: $font-bold;
+  font-size: 2em;
+  color: black;
 }
 
 p{
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-open;
+  font-size: 1.6em;
+  line-height: 1.8em;
+  color:black;
+  margin-top: 20px;
 }

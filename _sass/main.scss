@@ -11,14 +11,26 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:italic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:bold');
+@import url('https://fonts.googleapis.com/css?family=Roboto:light');
 
-$fontBold: 'akrobat-black', Helvetica, Arial, sans-serif;
+$font-bold: 'akrobat-black', Helvetica, Arial, sans-serif;
+$font-open: 'Open Sans', sans-serif;
+$font-roboto-light: 'Roboto Light', Helvetica, Arial, sans-serif;
 
 $greyColor:  #dbe3e9;
+$blue: #358ef7;
+$grey-light: #f4f5f6;
+$grey-medium: #d1d1d1;
+$grey-font: #636666;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "reset",
   "common",
-  "header"
+  "flexboxgrid",
+  "header",
+  "services"
 ;

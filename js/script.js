@@ -6,7 +6,7 @@ $(function(){
 		toggleNav();
 	});
 
-	$('#main, .navMobile > ul').click(function(e){
+	$('body, .navMobile > ul').click(function(e){
 		var target = $(e.target);
 		if($('#nav ul').hasClass('navMobile')) toggleNav();
 	});

@@ -1,0 +1,47 @@
+.services-box {
+  background-color: $grey-light;
+  &> div > div > div{
+    background-color: $grey-light;
+    border: 15px solid $grey-light;
+    width: 100%;
+    padding: 200px 22px;
+    transition: ease-in-out all 200ms;
+    h3{
+      font-family: $font-bold;
+      font-size: 4.2em;
+      color:black;
+      text-transform: uppercase;
+      margin-top: 20px;
+      transition: ease-in-out all 200ms;
+      word-wrap: break-word;
+    }
+    p{
+      transition: ease-in-out all 200ms;
+    }
+    &:hover{
+      border: 15px solid $grey-medium;
+    }
+    &:hover p, &:hover h3{
+      color: $grey-font;
+    }
+  }
+}
+
+.icons-services{
+  width: 103px;
+  svg{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .services-box > div > div > div{
+      padding: 100px 22px;
+  }
+}
+
+@media screen and (max-width:766px){
+  .services-box > div > div > div{
+      padding: 50px 22px;
+  }
+}
