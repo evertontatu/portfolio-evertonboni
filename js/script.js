@@ -24,29 +24,19 @@ $(function(){
 //Menu scroll
 $(function() {
     var initialPosition = $(document).scrollTop();
-    if (initialPosition > '80') {
+    if (initialPosition > '450') {
         $('#menu').addClass('nav-scroll');
-        $('nav ul li').addClass('colorLink');
-        $('.menu-button-burger').addClass('greenBurger');
-        $('.contactHeader').addClass('bg-color-contact-header');
     }
 
     $(document).scroll(function() {
         var initialPosition = $(document).scrollTop();
 
-        if (initialPosition > '80') {
+        if (initialPosition > '450') {
             $('#menu').addClass('nav-scroll');
-            $('nav ul li').addClass('colorLink');
-            $('.menu-button-burger').addClass('greenBurger');
-            $('.contactHeader').addClass('bg-color-contact-header');
         }
         if (initialPosition < '80') {
             $('#menu').removeClass('nav-scroll');
-            $('nav ul li').removeClass('colorLink');
-            $('.menu-button-burger').removeClass('greenBurger');
-            $('.contactHeader').removeClass('bg-color-contact-header');
         }
-
     });
 });
 

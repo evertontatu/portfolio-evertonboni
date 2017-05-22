@@ -88,7 +88,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 50px;
   transition: 300ms ease-in-out all;
 }
 
@@ -201,4 +201,8 @@ nav ul li a{
   .logoMenu{width:100%;}
   .menu-mobile path{fill: #fff;}
   .menu-mobile-down path{fill: green;}
+}
+
+.nav-scroll{
+  background-color: black;
 }
