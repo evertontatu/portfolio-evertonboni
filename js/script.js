@@ -40,6 +40,13 @@ $(function() {
     });
 });
 
+//isotope layout grid by Desandro
+$('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
 //Menu header button burger
 $(function(){
 
