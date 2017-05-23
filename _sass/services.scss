@@ -9,7 +9,7 @@
     h3{
       font-family: $font-bold;
       font-size: 4.2em;
-      color:black;
+      color:$grey-font;
       text-transform: uppercase;
       margin-top: 20px;
       transition: ease-in-out all 200ms;
@@ -17,18 +17,26 @@
     }
     p{
       transition: ease-in-out all 200ms;
+      color:$grey-font;
     }
     &:hover{
       border: 15px solid $grey-medium;
     }
     &:hover p, &:hover h3{
-      color: $grey-font;
+      color: black;
     }
   }
 }
 
 .icons-services{
   width: 103px;
+  svg{
+    width: 100%;
+  }
+}
+
+.icons-services-seo{
+  width: 50px;
   svg{
     width: 100%;
   }
