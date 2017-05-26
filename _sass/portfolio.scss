@@ -3,6 +3,33 @@
   h2{
     text-align: center;
   }
+  .portfolio-item{
+    width: 300px;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+    float: left;
+    margin-right: 20px;
+    &>div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 30px;
+      div > p:first-child{
+        font-family: $font-bold;
+      }
+      a{
+        padding: 13px;
+        background-color: $blue;
+        border-radius: 50px;
+      }
+    }
+  }
+  .btn-link-portfolio{
+    width: 27px;
+    svg{
+      width: 100%;
+    }
+  }
 }
 
 .wrapper-portfolio{
