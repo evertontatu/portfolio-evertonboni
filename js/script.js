@@ -40,13 +40,6 @@ $(function() {
     });
 });
 
-//isotope layout grid by Desandro
-$('.grid').isotope({
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
-});
-
 //Menu header button burger
 $(function(){
 
@@ -79,7 +72,7 @@ $(function(){
 });
 
 //Carousel
-$(document).ready(function() {
+$(function() {
   var owl = $("#slider-carousel");
   owl.owlCarousel({
     items: 3,
@@ -102,6 +95,8 @@ $(function() {
     var heightDevice = $(window).height();
     var widthDevice = $(window).width();
 
+		$('.parallax-home').css('height', heightDevice);
+
     if(widthDevice < "1020"){
         $('.parallax-home').css('height', heightDevice);
         $('.parallax-container').css('height', heightDevice);
@@ -113,49 +108,19 @@ $(function(){
     $(window).scroll(function(){
         var wScroll = $(this).scrollTop();
 
-        $('.parallax-text').css({
-            'transform' : 'translate(0px, '+ wScroll / 6 +'%)'
-        });
-
-        $('.parallax-text-filter').css({
-            'transform' : 'translate(0px, '+ wScroll / 6 +'%)'
-        });
-
         $('.parallax-home').css({
             'background-position' : 'center '+ wScroll / - 5 +'px'
         });
 
-        $('.parallax-filter').css({
-            'background-position' : 'center '+ wScroll / - 5 +'px'
+				$('.text-home').css({
+            'transform' : 'translate(0px,'+ wScroll / + 6 +'%)'
         });
 
     });
 });
 
-//button filtrar sectionFilter
-$(function(){
-  $('#btn-filter-mobile').click(function(){
-    $('.container-filter').toggle('show-container-filter');
-  });
-});
-
-//Tabs on product-infos
-$('.tabgroup > div').hide();
-$('.tabgroup > div:first-of-type').show();
-$('.tabs a').click(function(e){
-  e.preventDefault();
-    var $this = $(this),
-        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
-        others = $this.closest('li').siblings().children('a'),
-        target = $this.attr('href');
-    others.removeClass('active');
-    $this.addClass('active');
-    $(tabgroup).children('div').hide();
-    $(target).show();
-})
-
 //Scrool anchor
-$(document).ready(function(){
+$(function(){
     $('a.anchor[href^="#"]').bind('click.smoothscroll',function (e) {
         e.preventDefault();
 
@@ -187,9 +152,4 @@ function mtel(v){
 }
 function id( el ){
     return document.getElementById( el );
-}
-window.onload = function(){
-    id('telefone').onkeyup = function(){
-        mascara( this, mtel );
-    }
 }
