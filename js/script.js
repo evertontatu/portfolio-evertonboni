@@ -25,19 +25,21 @@ $(function(){
 $(function() {
     var initialPosition = $(document).scrollTop();
     if (initialPosition > '450') {
-        $('#menu').addClass('nav-scroll');
+        $('.logoMenu').addClass('nav-scroll');
     }
 
-    $(document).scroll(function() {
-        var initialPosition = $(document).scrollTop();
+		$(document).scroll(function() {
+				var initialPosition = $(document).scrollTop();
 
-        if (initialPosition > '450') {
-            $('#menu').addClass('nav-scroll');
-        }
-        if (initialPosition < '80') {
-            $('#menu').removeClass('nav-scroll');
-        }
-    });
+				if (initialPosition > '450') {
+					$('.logoMenu').addClass('nav-scroll');
+					$('.menu').addClass('nav-scroll');
+				}
+				if (initialPosition < '450') {
+					$('.logoMenu	').removeClass('nav-scroll');
+					$('.menu	').removeClass('nav-scroll');
+				}
+		});
 });
 
 //Menu header button burger

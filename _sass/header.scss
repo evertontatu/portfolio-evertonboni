@@ -113,10 +113,6 @@
   -ms-justify-content: space-between;
 }
 
-.menuBG{
-  background-color: #fff;
-  box-shadow: 0px 4px 25px -6px rgba(0,0,0,0.30);
-}
 
 nav{
   margin: 10px;
@@ -151,7 +147,7 @@ nav ul li a{
 @media screen and (min-width: 0px) and (max-width: 719px){
   nav{display: flex; justify-content: flex-end;width: 100%; margin: 0;}
   nav ul{width:300px; transform: translate(370px, 0); transition: all ease-in-out 300ms;}
-  nav ul li{margin: 0; justify-content: center; background-color: $grey-light; width: 100%;}
+  nav ul li{margin: 0; justify-content: center; background-color: $grey-dark; width: 100%;}
   nav ul li a{
     width: 100%;
     display: block;
@@ -197,7 +193,7 @@ nav ul li a{
       cursor: pointer;
     }
   }
-  .menu{justify-content: space-between; flex-direction: column;}
+  .menu{justify-content: space-between; flex-direction: column; background-color: transparent;}
   .logoMenu{width:100%;}
   .menu-mobile path{fill: #fff;}
   .menu-mobile-down path{fill: green;}
