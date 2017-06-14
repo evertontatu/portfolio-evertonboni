@@ -48,6 +48,24 @@
   margin: 0 auto;
 }
 
+.icon-portfolio{
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  transform: translate(0, -210px);
+  border: 5px solid #58A79D;
+  padding: 25px;
+  border-radius: 100px;
+  background-color: #fff;
+  div{
+    width: 40px;
+    svg{
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (max-width:1200px){
   .wrapper-portfolio{
     width: 900px;
