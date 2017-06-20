@@ -34,6 +34,11 @@ p{
   text-transform: uppercase;
 }
 
+a{
+  font-family: $font-semibold;
+  font-size: 1.6em;
+}
+
 .wrapper{
   width: 1042px;
   margin: 0 auto;
@@ -41,4 +46,63 @@ p{
 
 img{
   max-width: 100%;
+}
+
+div.btn-border{
+  display:flex;
+  &>a{
+    padding: 10px 40px;
+    border-radius: 60px;
+    border: 4px solid white;
+    color: white;
+    font-family: $font-bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 600;
+    transition: 100ms all ease-in-out;
+    margin: 10px;
+  }
+}
+div.btn-full{
+  display:flex;
+  &>a{
+    padding: 10px 40px;
+    border-radius: 60px;
+    border: 4px solid $blue;
+    background-color: $blue;
+    color: white;
+    font-family: $font-bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 600;
+    transition: 200ms all ease-in-out;
+    margin: 10px 0;
+  }
+}
+div.btn-border-blue{
+  display:flex;
+  &>a{
+    padding: 10px 40px;
+    border-radius: 60px;
+    border: 4px solid $blue;
+    background-color: white;
+    color: $blue;
+    font-family: $font-bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 600;
+    transition: 200ms all ease-in-out;
+    margin: 10px 0;
+    &:hover{
+      color: white;
+      background-color: $blue;
+      border: 4px solid $blue;
+    }
+  }
+}
+
+div.btn-border>a:hover, div.btn-full>a:hover{
+  color: $blue;
+  background-color: white;
+  border: 4px solid white;
 }

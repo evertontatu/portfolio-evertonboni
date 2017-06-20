@@ -1,0 +1,87 @@
+.aboutme-box{
+  padding: 130px 0;
+  width: 100%;
+  h3{
+    margin-bottom: 60px;
+    color: $grey-dark;
+    font-size: 7em;
+  }
+  p{
+    margin-bottom: 30px;
+  }
+  .avatar-circle{
+    display: flex;
+    justify-content: flex-end;
+    &>div{
+      width: 140px;
+      height: 140px;
+      background-color: $blue;
+      border: 7px solid $grey-dark;
+      border-radius: 140px;
+      margin-top: 130px;
+    }
+  }
+  .social-box{
+    display: flex;
+  }
+}
+
+.icon-twitter, .icon-behance, .icon-github, .icon-linkedin{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 15px 30px 0;
+  border: 2px solid $grey-dark;
+  border-radius: 100px;
+  transition: all ease-in-out 100ms;
+  svg{
+    width: 100%;
+    path{
+      fill: $grey-dark;
+      transition: all ease-in-out 100ms;
+    }
+  }
+  &:hover{
+    border: 2px solid $blue;
+    transform: scale(1.1);
+    svg path{
+      fill: $blue;
+    }
+  }
+}
+
+@media screen and (max-width:991px){
+  .aboutme-box{
+    h3{
+      text-align: center;
+      margin: 30px 0;
+    }
+    p{
+      margin-bottom: 30px;
+    }
+    .avatar-circle{
+      margin: 0;
+      justify-content: center;
+      &>div{
+        width: 140px;
+        height: 140px;
+        background-color: $blue;
+        border: 7px solid $grey-dark;
+        border-radius: 140px;
+        margin-top: 0;
+      }
+    }
+    .social-box{
+      justify-content: center;
+    }
+    .btn-border-blue{
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width:600px){
+  .company-box{
+    padding: 60px 0;
+  }
+}
