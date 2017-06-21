@@ -85,3 +85,13 @@ input, textarea{
     font-family: $font-semibold;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width:991px){
+    .contact-box{
+      padding: 70px 0;
+      .contact-form{
+        width: 100%;
+        padding: 15px;
+      }
+    }
+  }

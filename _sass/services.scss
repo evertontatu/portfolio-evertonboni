@@ -6,6 +6,11 @@
     width: 100%;
     padding: 200px 22px;
     transition: ease-in-out all 200ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 15px solid $grey-medium;
     h3{
       font-family: $font-bold;
       font-size: 4.2em;
@@ -21,7 +26,7 @@
       margin-top: 20px;
     }
     &:hover{
-      border: 15px solid $grey-medium;
+      border: 15px solid $blue;
     }
     &:hover p, &:hover h3{
       color: black;
